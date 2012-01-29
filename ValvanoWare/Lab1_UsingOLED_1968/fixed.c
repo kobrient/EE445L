@@ -98,7 +98,9 @@ void Fixed_uBinOut(unsigned int input){
 	long int result;
 	int rounding_temp;
 	int raise = 0;
-	int digit_out = 0;
+	char digitarray[7] = {'0','0','0','.','0','0', 0};
+	char* ptr;
+	int index = 5;
 
 	if(input == 0){
 		printf(" 0.00"); //6chars
@@ -119,15 +121,68 @@ void Fixed_uBinOut(unsigned int input){
 	}
 	result = (result/10)+raise;
 
-	if(result < 100){
-		printf(" 00.%d", result);
+	while(result > 0){
+		if (digitarray[index] == '.'){
+			index--;
+			continue;
+		}
+		digitarray[index] = (result%10)+48;//Adjust into ascii
+		result = result / 10;
+		index--;
+	}
+	index = 0;
+	while((digitarray[index] == '0') && (digitarray[index+1]!='.')){
+		index ++;
+	}
+	ptr = &digitarray[index];
+
+
+	printf("%s\n",ptr);
+
+}
+
+//------------Fixed_uBinOutS------------
+// Test Function Representing Fixed_uBinOut using char arrays to automatically
+// check test cases.
+void Fixed_uBinOutS(unsigned int input, char* buffer ){
+	long int result;			
+	int rounding_temp;
+	int raise = 0;
+	char digitarray[7] = {' ',' ','0','.','0','0', 0};
+	char* ptr;
+	int index = 5;
+
+	if(input == 0){
+		sprintf(buffer,"  0.00"); //6chars
 		return;
 	}
-	if(result < 100000){
-		digit_out = result/100;
-		printf(" %02d.",digit_out);
-		result = result%(digit_out*100);
-		printf("%02d\n", result);
+	if(input >= 256000){
+		sprintf(buffer,"***.**");
 		return;
 	}
+
+	input = input*1000;
+	result = input/256;
+
+	//Round to nearest 10s place
+	rounding_temp = result % 10;
+	if (rounding_temp >= 5){
+		raise = 1;
+	}
+	result = (result/10)+raise;
+
+	while(result > 0){
+		if (digitarray[index] == '.'){
+			index--;
+			continue;
+		}
+		digitarray[index] = (result%10)+48;//Adjust into ascii
+		result = result / 10;
+		index--;
+	}
+	index = 0;
+
+
+	sprintf(buffer,"%s",digitarray);
+	return;
 }

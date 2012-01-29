@@ -2,6 +2,7 @@
 //This file contains all the function declarations
 //as well as variables visibile to users
 //Maykei Nguyen
+//Kyle O'Brien
 //January 24, 2011
 
 //------------Fixed_uDecOut2------------
@@ -24,3 +25,8 @@ void Fixed_uDecOut3(signed int input);
 // Input: 32-bit unsigned integer
 // Output: 32-bit binary fixed-point with resolution of 1/256
 void Fixed_uBinOut(unsigned int input);
+
+//------------Fixed_uBinOutSprint------------
+// Test Function Representing Fixed_uBinOut using char arrays to automatically
+// check test cases.
+void Fixed_uBinOutS(unsigned int input, char* buffer );
