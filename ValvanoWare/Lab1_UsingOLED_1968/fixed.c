@@ -1,5 +1,6 @@
-//fixed.c
-// Runs on LM3S1968
+// Lab 1
+// fixed.c
+// Runs on LM3S1968 - Used to impliment and test printing of floating point binary and decimal numbers
 // Maykei Nguyen
 // Kyle O'Brien
 // January 24, 2011

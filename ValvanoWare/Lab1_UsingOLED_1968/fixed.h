@@ -1,9 +1,9 @@
-//fixed.h
-//This file contains all the function declarations
-//as well as variables visibile to users
-//Maykei Nguyen
-//Kyle O'Brien
-//January 24, 2011
+// Lab 1
+// fixed.h
+// Runs on LM3S1968 - Used to impliment and test printing of floating point binary and decimal numbers
+// Maykei Nguyen
+// Kyle O'Brien
+// January 24, 2011
 
 //------------Fixed_uDecOut2------------
 // Initializes the output function to display a fixed point
