@@ -57,13 +57,19 @@ int main(void){
 		AnError = i;
   	}
   }
-  ////////////
-  ////////////
-
 
   Output_Init();
   Output_Color(15);
-  printf("Hello, world.");
+
+  if(Errors){
+  	printf("There were %d error(s)", Errors);
+  }else{printf("No errors. Gratz!\n");}
+  ////////////
+  ////////////
+  Delay(4000000);           // delay ~1 sec at 12 MHz
+
+
+  printf("Routine testing...");
   printf("%c", NEWLINE);
   Delay(4000000);           // delay ~1 sec at 12 MHz
 
@@ -75,13 +81,14 @@ int main(void){
   printf("%c", NEWLINE);
   Delay(4000000);           // delay ~1 sec at 12 MHz
 
-  Fixed_uBinOut(64);
+  Fixed_uBinOut(512);
   printf("%c", NEWLINE);
   Delay(4000000);           // delay ~1 sec at 12 MHz
 
-  Fixed_uBinOut(512);
-  Delay(16000000);           // delay ~4 sec at 12 MHz
- 
+
+  Fixed_uBinOut(64);
+  Delay(4000000);
+
   Output_Clear();
   while(1){};
 }

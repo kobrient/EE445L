@@ -121,6 +121,10 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>DLGTARM</Key>
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(110=90,124,707,553,0)(100=-1,-1,-1,-1,0)(101=-1,-1,-1,-1,0)(102=-1,-1,-1,-1,0)(103=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(163=-1,-1,-1,-1,0)(164=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)(152=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)(1013=-1,-1,-1,-1,0)(171=-1,-1,-1,-1,0)(172=-1,-1,-1,-1,0)(173=-1,-1,-1,-1,0)(1014=-1,-1,-1,-1,0)(1016=-1,-1,-1,-1,0)(136=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
@@ -132,7 +136,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>lmidk-agdi</Key>
-          <Name>-O4622 -S3 -FO29</Name>
+          <Name>-U -O4622 -S3 -FO29</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <DebugFlag>
@@ -191,10 +195,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>32</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>238</TopLine>
-      <CurrentLine>238</CurrentLine>
+      <TopLine>187</TopLine>
+      <CurrentLine>187</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rit128x96x4.c</PathWithFileName>
       <FilenameWithoutPath>rit128x96x4.c</FilenameWithoutPath>
@@ -219,10 +223,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>28</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>132</TopLine>
-      <CurrentLine>144</CurrentLine>
+      <TopLine>107</TopLine>
+      <CurrentLine>140</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\fixed.c</PathWithFileName>
       <FilenameWithoutPath>fixed.c</FilenameWithoutPath>
@@ -233,10 +237,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>11</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>1</TopLine>
-      <CurrentLine>26</CurrentLine>
+      <CurrentLine>1</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Lab1Main_UseOLED.c</PathWithFileName>
       <FilenameWithoutPath>Lab1Main_UseOLED.c</FilenameWithoutPath>
@@ -325,9 +329,9 @@
       <Documents>
         <Doc>
           <Name>.\rit128x96x4.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>238</TopLine>
-          <CurrentLine>238</CurrentLine>
+          <ColumnNumber>32</ColumnNumber>
+          <TopLine>187</TopLine>
+          <CurrentLine>187</CurrentLine>
         </Doc>
         <Doc>
           <Name>Output.h</Name>
@@ -349,9 +353,9 @@
         </Doc>
         <Doc>
           <Name>.\fixed.c</Name>
-          <ColumnNumber>28</ColumnNumber>
-          <TopLine>132</TopLine>
-          <CurrentLine>144</CurrentLine>
+          <ColumnNumber>11</ColumnNumber>
+          <TopLine>107</TopLine>
+          <CurrentLine>140</CurrentLine>
         </Doc>
         <Doc>
           <Name>fixed.h</Name>
@@ -361,9 +365,9 @@
         </Doc>
         <Doc>
           <Name>.\Lab1Main_UseOLED.c</Name>
-          <ColumnNumber>20</ColumnNumber>
+          <ColumnNumber>11</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>26</CurrentLine>
+          <CurrentLine>1</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

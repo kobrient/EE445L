@@ -76,7 +76,7 @@ void Fixed_uDecOut3(signed int input){
 				}
 			}
 			output = i/divisor;
-			printf("%2d", output);	//print the value with two spaces to make display pretty
+			printf("%3d", output);	//print the value with 3 spaces to make display pretty
 			printf(".");
 
 			//this section accounts for the decimal part of the fixed point	number
@@ -95,7 +95,7 @@ void Fixed_uDecOut3(signed int input){
 // Input: 32-bit unsigned integer
 // Output: 32-bit binary fixed-point with resolution of 1/256
 void Fixed_uBinOut(unsigned int input){
-	long int result;
+	int result;
 	int rounding_temp;
 	int raise = 0;
 	char digitarray[7] = {'0','0','0','.','0','0', 0};
@@ -103,7 +103,7 @@ void Fixed_uBinOut(unsigned int input){
 	int index = 5;
 
 	if(input == 0){
-		printf(" 0.00"); //6chars
+		printf("  0.00"); //6chars
 		return;
 	}
 	if(input >= 256000){
@@ -137,7 +137,7 @@ void Fixed_uBinOut(unsigned int input){
 	ptr = &digitarray[index];
 
 
-	printf("%s\n",ptr);
+	printf("%6s",ptr);
 
 }
 
@@ -149,7 +149,6 @@ void Fixed_uBinOutS(unsigned int input, char* buffer ){
 	int rounding_temp;
 	int raise = 0;
 	char digitarray[7] = {' ',' ','0','.','0','0', 0};
-	char* ptr;
 	int index = 5;
 
 	if(input == 0){
