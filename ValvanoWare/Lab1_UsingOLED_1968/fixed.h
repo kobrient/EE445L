@@ -29,4 +29,6 @@ void Fixed_uBinOut(unsigned int input);
 //------------Fixed_uBinOutSprint------------
 // Test Function Representing Fixed_uBinOut using char arrays to automatically
 // check test cases.
+// Input: 32-bit unsigned integer and character buffer
+// Output: Filled char buffer containing the input num as in human-readable string format
 void Fixed_uBinOutS(unsigned int input, char* buffer );

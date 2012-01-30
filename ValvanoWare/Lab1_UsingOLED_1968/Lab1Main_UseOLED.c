@@ -1,5 +1,6 @@
+// Lab 1
 // Lab1Main_UseOLED.c
-// Runs on LM3S1968
+// Runs on LM3S1968 - Used to impliment and test printing of floating point binary and decimal numbers
 // Maykei Nguyen
 // Kyle O'Brien
 // January 24, 2011
@@ -17,16 +18,16 @@ const struct outTestCase{ // used to test routines
 typedef const struct outTestCase outTestCaseType;
 outTestCaseType outTests3[13]={
 { 0, "  0.00" }, // 0/256 = 0.00
-{ 4, "  0.02" }, // 4/256 = 0.01
-{ 10, "  0.04" }, // 10/256 = 0.03
+{ 4, "  0.02" }, // 4/256 = 0.02
+{ 10, "  0.04" }, // 10/256 = 0.04
 { 200, "  0.78" }, // 200/256 = 0.78
 { 254, "  0.99" }, // 254/256 = 0.99
 { 505, "  1.97" }, // 505/256 = 1.97
-{ 1070, "  4.18" }, // 1070/256 = 4.17
+{ 1070, "  4.18" }, // 1070/256 = 4.18
 { 26000, "101.56" }, // 26000/256 = 101.56
-{ 32767, "128.00" }, // 32767/256 = 127.99
+{ 32767, "128.00" }, // 32767/256 = Rounds to 128
 { 32768, "128.00" }, // 32768/256 = 128
-{ 34567, "135.03" }, // 34567/256 = 135.02
+{ 34567, "135.03" }, // 34567/256 = 135.03
 {255998, "999.99" }, // 255998/256 = 999.99
 {1000000, "***.**" } // error
 };
@@ -44,10 +45,10 @@ Delay(unsigned long ulCount)
     bx      lr
 }
 int main(void){
-
-  //Array checking. Using strcmp
-  /////////
-  /////////
+  /////////////////////////////////////////////////////////
+  //Automatic Testing using char buffers and an alternative
+  //	sprintf version of uBinOut
+  /////////////////////////////////////////////////////////
   unsigned int i;
   Errors = 0;
   for(i=0; i<13; i++){
@@ -64,8 +65,10 @@ int main(void){
   if(Errors){
   	printf("There were %d error(s)", Errors);
   }else{printf("No errors. Gratz!\n");}
-  ////////////
-  ////////////
+  //End automatic testing///
+  //////////////////////////
+  
+  
   Delay(4000000);           // delay ~1 sec at 12 MHz
 
 
