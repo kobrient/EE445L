@@ -869,14 +869,14 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       656         70          0          0          0       2445   fixed.o
+       656         70          0          0          0       2449   fixed.o
        306         88        208          8         10       1629   lab1main_useoled.o
       1140         36          0          6        504       5618   output.o
       1140         52        571         12          0       4282   rit128x96x4.o
        280        256          0          0       1024        708   startup.o
 
     ----------------------------------------------------------------------
-      3524        502        812         28       1544      14682   Object Totals
+      3524        502        812         28       1544      14686   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          1          2          6          0   (incl. Padding)
 
@@ -920,8 +920,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5536        592        968         32       1544      25929   Grand Totals
-      5536        592        968         32       1544      25929   ELF Image Totals
+      5536        592        968         32       1544      25933   Grand Totals
+      5536        592        968         32       1544      25933   ELF Image Totals
       5536        592        968         32          0          0   ROM Totals
 
 ==============================================================================
